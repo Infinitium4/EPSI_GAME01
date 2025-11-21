@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-clicker.css">
+    <title>CONS MANAGER</title>
+</head>
+<body>
+        <h2>Compteur : <span id="affichage">0</span></h2>
+
+    <button id="bouton">Clique ici</button>
+
+    <script>
+        let compteur = 0;
+
+        document.getElementById("bouton").addEventListener("click", function() {
+            compteur++;
+            document.getElementById("affichage").textContent = compteur;
+        });
+    </script>
+    
+</body>
+</html>
