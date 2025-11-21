@@ -24,6 +24,8 @@ h1{
   top: -180px; 
   left: 1100px;
   transform: rotate(-120deg);
+  width: 120px;
+  animation: balançoire 2.5s ease-in-out infinite;
 }
 .photo-canabis03{
   width: 750px; 
@@ -31,4 +33,9 @@ h1{
   top: 200px; 
   left: 900px;
   transform: rotate(-40deg);
+}
+@keyframes balançoire {
+  0%   { transform: rotate(-10deg); }
+  50%  { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
 }
