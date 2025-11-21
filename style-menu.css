@@ -1,43 +1,35 @@
-/* ANIMATIONS */
-@keyframes wave1 {
-  0%   { transform: rotate(120deg) translateY(0); }
-  50%  { transform: rotate(125deg) translateY(10px); }
-  100% { transform: rotate(120deg) translateY(0); }
+body{
+    background-color: rgb(107, 183, 107) ;
+    overflow: hidden;
+    height: 100%;
 }
 
-@keyframes wave2 {
-  0%   { transform: rotate(-120deg) translateY(0); }
-  50%  { transform: rotate(-115deg) translateY(12px); }
-  100% { transform: rotate(-120deg) translateY(0); }
+h1{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 75px;
+    text-shadow: 2px 2px 4px rgb(81, 81, 81);
 }
 
-@keyframes wave3 {
-  0%   { transform: rotate(-40deg) translateY(0); }
-  50%  { transform: rotate(-35deg) translateY(15px); }
-  100% { transform: rotate(-40deg) translateY(0); }
-}
-
-/* FEUILLES AVEC POSITIONS D'ORIGINE */
 .photo-canabis01 {
-  width: 40%;
+  width: 40%;          /* équivalent à ~500px si le parent fait ~1250px de large */
   position: absolute;
-  top: -12%;
-  left: -13%;
-  animation: wave1 4s ease-in-out infinite;
+  top: -12%;           /* équivalent à -150px si le parent fait 1250px de haut */
+  left: -13%;          /* équivalent à -160px si le parent fait ~1250px de large */
+  transform: rotate(120deg);
 }
-
-.photo-canabis02 {
-  width: 500px;
+.photo-canabis02{
+  width: 500px; 
   position: absolute;
-  top: -180px;
+  top: -180px; 
   left: 1100px;
-  animation: wave2 3.8s ease-in-out infinite;
+  transform: rotate(-120deg);
+}
+.photo-canabis03{
+  width: 750px; 
+  position: absolute;
+  top: 200px; 
+  left: 900px;
+  transform: rotate(-40deg);
 }
 
-.photo-canabis03 {
-  width: 750px;
-  position: absolute;
-  top: 200px;
-  left: 900px;
-  animation: wave3 5s ease-in-out infinite;
-}
