@@ -12,24 +12,41 @@ h1{
 }
 
 .photo-canabis01 {
-  width: 40%;          /* équivalent à ~500px si le parent fait ~1250px de large */
+  width: 40%;
   position: absolute;
-  top: -12%;           /* équivalent à -150px si le parent fait 1250px de haut */
-  left: -13%;          /* équivalent à -160px si le parent fait ~1250px de large */
+  top: -10%;      /* remplace tes px */
+  left: -15%;
   transform: rotate(120deg);
 }
-.photo-canabis02{
-  width: 500px; 
+
+.photo-canabis02 {
+  width: 30%;
   position: absolute;
-  top: -180px; 
-  left: 1100px;
+  top: 0%;
+  right: 5%;    /* plus stable que left: 1100px */
   transform: rotate(-120deg);
 }
-.photo-canabis03{
-  width: 750px; 
+
+.photo-canabis03 {
+  width: 45%;
   position: absolute;
-  top: 200px; 
-  left: 900px;
+  bottom: 10%;  /* remplace px */
+  right: 5%;
   transform: rotate(-40deg);
 }
+
+
+@keyframes bouge {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(10px); }
+  100% { transform: translateY(0); }
+}
+
+/* On applique le mouvement à toutes tes feuilles */
+.photo-canabis01,
+.photo-canabis02,
+.photo-canabis03 {
+  animation: bouge 3s ease-in-out infinite;
+}
+
 
