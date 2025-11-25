@@ -16,4 +16,24 @@ h1{
 .photo-dollars{
   width: 10%;
   position: relative;
+ transform: translate(850%, -50%);
+}
+
+.money-box {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centrer le texte */
+    width: 200px; 
+    height: 60px;
+    border: 4px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.9); /* fond visible */
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    
+    position: fixed; /* fixe en haut à droite */
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
 }
