@@ -13,3 +13,7 @@ h1{
 #bouton{
     background-color: rgb(59, 121, 59);
 }
+.photo-dollars{
+  width: 10%;
+  position: relative;
+}
