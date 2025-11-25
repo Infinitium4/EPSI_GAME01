@@ -14,41 +14,29 @@ h1{
 .photo-canabis01 {
   width: 40%;
   position: absolute;
-  top: -10%;      /* remplace tes px */
+  top: -10%;
   left: -15%;
-  transform: rotate(120deg);
-
+  --rotation: 120deg; /* variable CSS pour la rotation */
+  transform: rotate(var(--rotation));
 }
 
 .photo-canabis02 {
-  width: 30%;
+  width: 35%;
   position: absolute;
-  top: 0%;
-  right: 5%;    /* plus stable que left: 1100px */
-  transform: rotate(-120deg);
+  top: 65%;
+  left: -1%;
+  --rotation: 55deg;
+  transform: rotate(var(--rotation));
 }
 
 .photo-canabis03 {
   width: 45%;
   position: absolute;
-  bottom: 10%;  /* remplace px */
-  right: 5%;
-  transform: rotate(-40deg);
+  bottom: -15%;
+  right: -18%;
+  --rotation: -40deg;
+  transform: rotate(var(--rotation));
 }
-
-
-@keyframes bouge {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(10px); }
-  100% { transform: translateY(0); }
-}
-
-.photo-canabis01,
-.photo-canabis02,
-.photo-canabis03 {
-  animation: bouge 3s ease-in-out infinite;
-}
-
 #monBouton {
     position: fixed;
     top: 50%;
