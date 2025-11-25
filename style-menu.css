@@ -1,0 +1,32 @@
+.menu-vertical {
+    position: absolute;       /* permet de le mettre où tu veux */
+    top: 30%;                /* change la position ici */
+    right: 30%;               /* change la position ici */
+    
+    width: 150px;
+    max-height: 250px;        /* limite la hauteur */
+    overflow-y: auto;         /* scroll automatique */
+    
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.menu-vertical button {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: #4caf50;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.menu-vertical button:hover {
+    background: #45a049;
+}
