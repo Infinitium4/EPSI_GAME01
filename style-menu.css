@@ -17,6 +17,7 @@ h1{
   top: -10%;      /* remplace tes px */
   left: -15%;
   transform: rotate(120deg);
+
 }
 
 .photo-canabis02 {
@@ -42,10 +43,47 @@ h1{
   100% { transform: translateY(0); }
 }
 
-/* On applique le mouvement à toutes tes feuilles */
 .photo-canabis01,
 .photo-canabis02,
 .photo-canabis03 {
   animation: bouge 3s ease-in-out infinite;
 }
 
+#monBouton {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 25px 45px;
+    font-size: 32px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+    border: none;
+    border-radius: 20px;
+
+    background: linear-gradient(145deg, #0e8f2a, #076b1e);
+    box-shadow: 
+        0 0 15px rgba(0, 255, 80, 0.6),
+        0 0 30px rgba(0, 150, 50, 0.4);
+
+    transition: transform 0.25s ease, 
+                box-shadow 0.25s ease, 
+                background 0.25s ease;
+}
+
+#monBouton:hover {
+    transform: translate(-50%, -50%) scale(1.12);
+    background: linear-gradient(145deg, #10b33a, #0a8029);
+    box-shadow: 
+        0 0 25px rgba(0, 255, 110, 0.9),
+        0 0 50px rgba(0, 170, 70, 0.6);
+}
+
+#monBouton:active {
+    transform: translate(-50%, -50%) scale(1.05);
+}
